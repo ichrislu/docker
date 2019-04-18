@@ -2,13 +2,14 @@
 
 本仓库是自己创建的基础镜像仓库
 
-### chris-alpine
+### alpine
 
-基础镜像，基于alpine3.7版
+基础镜像，基于alpine3.7版，修改记录
 
-1. 在原版基本上添加时区配置文件“Shanghai”取自CentOS 7.4，貌似正常
+1. 配置时区：/etc/timezone
+2. 配置时间：/etc/localtime
 
-### chris-openj9
+### openj9
 
 基于chris-alpine基础镜像，兼容性测试版本alpine 3.6
 
