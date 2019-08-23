@@ -9,17 +9,21 @@
 1. 配置时区：/etc/timezone
 2. 配置时间：/etc/localtime
 
-### openj9
+### openj9-jdk11
 
 基于chris-alpine基础镜像，兼容性测试版本alpine 3.6
 
 1. 添加c语言运行库：glibc-2.27-r0，下载glibc-2.27-r0.apk保存到Dockerfile同级目录
 2. 添加libz（jdk10以后需要的）：下载zlib.tar.xz，解压到Dockerfile同级目录
 3. 添加gcc-lib（jdk10以后需要的）：下载gcc-libs.tar.xz后，解压到Dockerfile同级目录
-4. 安装JDK
+4. 安装JDK11
 5. 设置环境变量
 
+### openj9-jre8
 
+1. 添加c语言运行库，glibc-2.27-r0，下载glibc-2.27-r0.apk保存到Dockerfile同级目录
+2. 安装JDK8
+3. 设置环境变量
 
 ### TODO
 
